@@ -16,7 +16,6 @@ else
 
     switch ($tutor) {
       case "no-preference":
-      	
         $tutoremail='';
         break;
       case "anna":
@@ -290,12 +289,18 @@ mastermindstutoring.com';
 
 <!--display divs based on selected tutor dropdown item-->
 <script type="text/javascript">
-$("select.classes").change(function(){
-  var filters = $.map($("select.tutor").toArray(), function(e){
-      return $(e).val();
-  }).join(".");
-  $("div.flexcontainer2").find("div").hide();
-  $("div.flexcontainer2").find("div." + filters).show();
+$(document).ready(function(){
+    $("#tutor").change(function(){
+        $(this).find("option:selected").each(function(){
+            var optionValue = $(this).attr("value");
+            if(optionValue){
+                $(".box").not("." + optionValue).hide();
+                $("." + optionValue).show();
+            } else{
+                $(".box").hide();
+            }
+        });
+    }).change();
 });
 </script>
 
