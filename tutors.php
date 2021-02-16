@@ -122,23 +122,23 @@
 
 <div class="flexcontainer2">
 
-          <!--FAHAD
+          <!--FAHAD-->
 
             <div class="ma random classes elementary-math pre-algebra algebra-one algebra-two pre-calculus calculus ap-cal-ab ap-cal-bc chemistry ap-chemistry physics ap-physics-1 ap-physics-2 ap-physics-c2 test-prep homework-help english skype zoom brook cahasta emlib hwlib hoolib bam 280stae 280staw home chur mbsta nslib samlib barn vlib vsta other 50s"><span class="hide">35244,35142,35226,35022,35020,35021,35221,35080,35211,35228,35124,35216,35144,35114,35064,35209,35061,35229,35208,35243,35137,35007,35218,35205,35127,35254,35233,35204,35224,35242,35238,35203,35283,35282,35266,35261,35260,35259,35255,35253,35295,35287,35296,35294,35292,35291,35290,35297,35293,35298,35288,35249,35246,35201,35202,35219,35220,35231,35232,35236,35237,35285,35043,35111,35223,35222,35213,35234,35023,35060,35207,35214,35212,35118,35074,35115,35005,35206,35051,35210,35068,35440,35187,35217,35040,35181</span>
                <a href="/fahad"><img class="tutor" src="images/fahad-tutor-birmingham-al.jpg" alt="fahad tutor in birmingham" /></a>
                 <span class="biowrapper">
                 <p class="bio"><br><tutorname>Fahad</tutorname> is a sophomore at UAB majoring in Biophysics and minoring in Mathematics/Chemistry... <a href="/fahad" target="_blank">Read More.</a> <b>$50/hour</b><br><br><br></p>
                 </span>
-            </div>-->
+            </div>
 
-          <!--CARSON
+          <!--CARSON-->
 
             <div class="fe random classes elementary-math pre-algebra algebra-one algebra-two pre-calculus calculus statistics physical-science biology ap-bio chemistry ap-chemistry physics ap-physics-1 ap-physics-2 test-prep homework-help english ap-english-lang ap-english-lit skype zoom brook cahasta emlib hwlib hoolib bam 280stae 280staw home chur mbsta nslib samlib barn vlib vsta other 30s"><span class="hide">35205,35233,35203,35231,35220,35219,35202,35201,35283,35285,35232,35236,35266,35261,35260,35259,35255,35253,35282,35246,35237,35287,35294,35295,35297,35293,35292,35291,35298,35290,35288,35296,35249,35238,35209,35229,35204,35222,35234,35254,35213,35223,35208,35211,35207,35212,35243,35218,35216,35221,35206,35228,35064,35226,35214,35142,35068,35217,35224,35210,35060,35061,35127,35242,35181,35244,35119,35020,35021,35015,35036,35117,35215</span>
                 <a href="/carson"><img class="tutor" src="images/carson-tutor-birmingham-al.jpg" alt="carson tutor in birmingham" /></a>
                 <span class="biowrapper">
                 <p class="bio"><br><tutorname>Carson</tutorname> is a senior at UAB majoring in biology with a double minor in chemistry and business administration.... <a href="/carson" target="_blank">Read More.</a> <b>$38/hour</b><br><br><br></p>
             </span>
-            </div>-->
+            </div>
 
           <!--HEATHER-->
 
@@ -158,14 +158,14 @@
               </span>
               </div>
 
-            <!--KIM
+            <!--KIM-->
 
             <div class="fe random classes act ap-comp-government ap-english-lang ap-english-lit ap-euro-history ap-german ap-geo ap-us-government ap-us-history ap-world-history elementary-math algebra-one algebra-two english geometry government-economics history homework-help pre-algebra test-prep german skype zoom 50s"><span class="hide"></span>
                 <a href="/kim"><img class="tutor" src="images/kim-tutor-birmingham-al.jpg" alt="kim tutor in birmingham" /></a>
                 <span class="biowrapper">
                 <p class="bio"><br><tutorname>Kim</tutorname> is a certified teacher in math, German, and history... <a href="/kim" target="_blank">Read More.</a> <b>$50/hour</b><br><br><br></p>
             </span>
-            </div>-->
+            </div>
 
             <!--OLIVIA-->
 
@@ -185,14 +185,14 @@
             </span>
         </div>
 
-            <!--STANLEY
+            <!--STANLEY-->
 
             <div class="ma random classes elementary-math pre-algebra algebra-one algebra-two geometry pre-calculus calculus statistics chemistry ap-chemistry physics act test-prep homework-help reading english ap-english-lang ap-english-lit government-economics ap-micro ap-macro french skype zoom brook cahasta emlib hwlib hoolib bam 280stae 280staw home chur mbsta nslib samlib barn vlib vsta other 40s"><span class="hide">35242,35043,35185,35147,35243,35124,35216,35051,35186,35223,35244,35094,35078,35176,35229,35213,35238,35209,35226,35210,35205,35007,35222,35144,35137,35142,35233,35212,35178,35211,35298,35297,35296,35295,35294,35293,35292,35291,35249,35246,35237,35236,35232,35231,35220,35202,35201,35219,35253,35255,35259,35290,35288,35287,35285,35283,35282,35260,35261,35266,35206,35203,35015</span>
                <a href="/stanley"><img class="tutor" src="images/stanley-tutor-birmingham-al.jpg" alt="stanley tutor in birmingham" /></a>
                 <span class="biowrapper">
                 <p class="bio"><br><tutorname>Stanley</tutorname> is a senior at the University of Chicago majoring in Economics... <a href="/stanley" target="_blank">Read More.</a> <b>$40/hour</b><br><br><br></p>
                 </span>
-            </div>-->
+            </div>
 
             <!--KIRSTIN-->
 
@@ -223,11 +223,6 @@
 </div>
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
-            <!--1 shows/hides tutors based on select box-->
-            <!--2 makes profile divs clickable-->
-            <!--3 shows/hides tutors based on input box and tutor classes-->
-            <!--TODO: get 1 and 3 to work together: https://stackoverflow.com/questions/28887410/using-jquery-to-filtering-with-two-input-types-->
 
             <script>
 
