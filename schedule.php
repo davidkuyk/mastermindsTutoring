@@ -14,45 +14,6 @@ else
     {
     $tutor=$_REQUEST['tutor'];
 
-    switch ($tutor) {
-      case "no-preference":
-        $tutoremail='';
-        break;
-      case "anna":
-        $tutoremail='annahorn2017@gmail.com';
-        break;
-      case "carson":
-        $tutoremail='carsonlticer@gmail.com';
-        break;
-      case "fahad":
-        $tutoremail='fanadeems@gmail.com';
-        break;
-      case "faith":
-        $tutoremail='faithturner2015@gmail.com';
-        break;
-      case "heather":
-        $tutoremail='phillipsh1234@gmail.com';
-        break;
-      case "kim":
-        $tutoremail='kimebaker.kb2@gmail.com';
-        break;
-      case "kirstin":
-        $tutoremail='kirstinwhitmire@gmail.com';
-        break;
-      case "lindsay":
-        $tutoremail='lnleebama@gmail.com';
-        break;
-      case "manuela":
-        $tutoremail='portilla.manuela97@gmail.com';
-        break;
-      case "olivia":
-        $tutoremail='ohlivia9812@gmail.com';
-        break;
-      case "stanley":
-        $tutoremail='sbadio98@gmail.com';
-        break;
-      }
-
     $schoolsubject12=$_REQUEST['subject12'];
     $meetingplace12=$_REQUEST['meetingplace12'];
     $duration12=$_REQUEST['duration12'];
@@ -235,7 +196,7 @@ Phone: '.$phone.'
 Texts: '.$texts.'
 Alternate Phone: '.$alternate_phone.'
 Student Phone: '.$student_phone.'
-Email: '.$email.''.$email2.'
+Email: '.$email.'
 School: '.$school.'
 How did you hear about us: '.$source.'
 Referred By: '.$referred.'
@@ -244,37 +205,11 @@ Acknowledgment of Policies: '.$new_acknowledgment.''.$returning_acknowledgment.'
 David Kuyk
 Owner/Director, Masterminds Tutoring
 mastermindstutoring.com';
-// EMAIL SENT TO THE TUTOR
-        $htmlContent2 =
-'Would this session work for you? Please reply "Yes" or "No" so I know you saw this email. If you could meet at an alternative time, let me know.
-
-Date: '.$date1.''.$date12.''.$date21.''.$date3.''.$date4.''.$date5.''.$date6.''.$date7.''.$date13.''.$date9.''.$date10.''.$date30.'
-Time: '.$time1.''.$time12.''.$time21.''.$time3.''.$time4.''.$time5.''.$time6.''.$time7.''.$time13.''.$time9.''.$time10.''.$time30.'
-Alternatives: '.$alternative1.''.$alternative12.''.$alternative21.''.$alternative3.''.$alternative4.''.$alternative5.''.$alternative6.''.$alternative7.''.$alternative13.''.$alternative9.''.$alternative10.''.$alternative30.'
-Tutor: '.$tutor.'
-Student: '.$new_student_full_name.''.$returning_student_full_name.'
-Subject: '.$schoolsubject1.''.$schoolsubject12.''.$schoolsubject21.''.$schoolsubject3.''.$schoolsubject4.''.$schoolsubject5.''.$schoolsubject6.''.$schoolsubject7.''.$schoolsubject13.''.$schoolsubject9.''.$schoolsubject10.''.$schoolsubject30.'
-Duration: '.$duration1.''.$duration12.''.$duration21.''.$duration3.''.$duration4.''.$duration5.''.$duration6.''.$duration7.''.$duration13.''.$duration9.''.$duration10.''.$duration30.'
-Meeting Place: '.$meetingplace1.''.$meetingplace12.''.$meetingplace21.''.$meetingplace3.''.$meetingplace4.''.$meetingplace5.''.$meetingplace6.''.$meetingplace7.''.$meetingplace13.''.$meetingplace9.''.$meetingplace10.''.$meetingplace30.'
-Gender: '.$gender.'
-Graduation year: '.$graduation_year.'
-Zip Code: '.$zip_code.'
-
-David Kuyk
-Owner/Director, Masterminds Tutoring
-mastermindstutoring.com';
 
 // sends the email
-	// if returning client email is blank, send to new client email
-        if (strpos($email2, '@') === false) {
-          mail($email, $subject, $htmlContent1, $from, $header);
-    // if new client email is blank, send to returning client email
-        } elseif (strpos($email, '@') === false) {
-          mail($email2, $subject, $htmlContent1, $from, $header);
-        }
-    // always mail to info and the tutor
+        mail($email, $subject, $htmlContent1, $from, $header);
+        mail($email2, $subject, $htmlContent1, $from, $header);
         mail("info@mastermindstutoring.com", $subject, $htmlContent1, $from, $header);
-        mail($tutoremail, $subject, $htmlContent2, $from, $header);
 // redirects the user to the success page
         header('Location: https://mastermindstutoring.com/success.php');
         }
@@ -283,8 +218,6 @@ mastermindstutoring.com';
 
 <!--loads the jquery library to run the following scripts-->
     <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 
 <!--display divs based on selected tutor dropdown item-->
@@ -325,12 +258,12 @@ $(document).ready(function(){
 
     <p><i><b>Questions? Problems?</b> Want to schedule <b>reoccurring</b> sessions, <b>reschedule</b> a session, or <b>cancel</b> a session? Email info@mastermindstutoring.com</b></i></p>
 
-    <span class="req">*</span>    <select class="tutor" name="tutor" required="">
+    <span class="req">*</span>    <select id="tutor" name="tutor" required="">
       <option selected disabled>Select Tutor</option>
       <option value="no-preference">No Preference</option>
       <option value="anna">Anna</option>
       <option value="carson">Carson</option>
-      <!--<option value="fahad">Fahad</option>-->
+      <option value="fahad">Fahad</option>
       <option value="faith">Faith</option>
       <option value="heather">Heather</option>
       <!--<option value="kim">Kim</option>-->
@@ -348,7 +281,7 @@ $(document).ready(function(){
 
         <p><i>After you submit this form, we'll check with all of our tutors who help with the class you select and then email you some options.</i></p>
 
-        <span class="req">*</span>    <select class="subject" name="subject">
+        <span class="req">*</span>    <select name="subject1">
           <option selected disabled>Select Class</option>
           <optgroup label="Math">
             <option value="elementary-math">Elementary Math</option>
@@ -687,8 +620,6 @@ $(document).ready(function () {
           </optgroup>
           <optgroup label="English">
               <option value="english">English</option>
-              <option value="ap-english-lang">AP English Language and Composition</option>
-              <option value="ap-english-lit">AP English Literature and Composition</option>
           </optgroup>
         </select>
         <br><br>
@@ -1703,7 +1634,7 @@ $(document).ready(function () {
   $('.yesmanuela').hide();
 $(document).ready(function () {
   $('.zipcodemanuela').on('input', function () {
-    var zips = "35209,35211,35229,35205,35233,35208,35254,35221,35204,35203,35216,35298,35266,35282,35283,35285,35287,35288,35290,35291,35292,35293,35294,35295,35296,35297,35261,35260,35201,35202,35219,35220,35231,35232,35236,35237,35246,35249,35253,35255,35259,35226,35238,35142,35218,35228,35243,35064,35222,35234";
+    var zips = "35209,35211,35229,35205,35233,35208,35254,35221,35204,35203,35216,35298,35266,35282,35283,35285,35287,35288,35290,35291,35292,35293,35294,35295,35296,35297,35261,35260,35201,35202,35219,35220,35231,35232,35236,35237,35246,35249,35253,35255,35259,35226,35238,35142,35218,35228,35243,35064,35222,35234,35242";
     var input = $(this).val();
     if(input.length !== 5) {
       $('.nomanuela').hide();
