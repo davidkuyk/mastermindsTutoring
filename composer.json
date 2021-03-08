@@ -1,0 +1,8 @@
+
+{
+  "name": "masterminds-tutoring",
+  "description": "tutoring simplified",
+  "require-dev": {
+    "heroku/heroku-buildpack-php": "*"
+  }
+}
