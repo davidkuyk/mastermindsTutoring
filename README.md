@@ -1,4 +1,4 @@
-# mastermindsTutoring
+# Masterminds Tutoring
 
 [![GitHub version](https://img.shields.io/badge/version-v1.0.0-blue.svg)](https://github.com/davidkuyk/mastermindsTutoring)
 [![License](https://img.shields.io/github/license/davidkuyk/mastermindsTutoring.svg)](https://github.com/davidkuyk/mastermindsTutoring/blob/main/LICENSE)
@@ -6,7 +6,7 @@
 The website I designed for my tutoring company, which I ran for 5 years.
 ## Table of Contents
 
-- [mastermindsTutoring](#mastermindstutoring)
+- [Masterminds Tutoring](#masterminds-tutoring)
   - [Table of Contents](#table-of-contents)
   - [Background](#background)
   - [Future Feature Ideas](#future-feature-ideas)
@@ -28,7 +28,7 @@ The schedule page features a form that populates different classes, meeting plac
 
 ## Installation
 
-[Click here](http://mastermindstutoring.com/) to go to the site. Or, if you want to clone this repository, open your terminal and type:
+[Click here](https://mastermindstutoring.herokuapp.com/) to go to the site. Or, if you want to clone this repository, open your terminal and type:
 
 ```s
 $ git clone https://github.com/davidkuyk/mastermindsTutoring.git
